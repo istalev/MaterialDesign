@@ -5,11 +5,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+
+@ActivityScope
 public class TabPagerAdapter extends PagerAdapter {
     private final LayoutInflater layoutInflater;
     private final int numTabs;
 
-    public TabPagerAdapter(LayoutInflater layoutInflater, int numTabs) {
+    @Inject
+    public TabPagerAdapter(LayoutInflater layoutInflater, @Named("NUM_TABS") int numTabs) {
         this.layoutInflater = layoutInflater;
         this.numTabs = numTabs;
     }
