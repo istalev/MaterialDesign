@@ -1,5 +1,5 @@
 # MaterialDesign
-The goal of this project is to demonstrate good Android coding practices.
+The goal of this project is to demonstrate good Android coding practices and will attempt to follow Google's Material Design.
 It will include:
 - Good MVP design
 - Dependency Injection using [Dagger2](http://google.github.io/dagger/)
